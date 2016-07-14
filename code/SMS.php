@@ -33,7 +33,7 @@ class SMS {
 
 	/**
 	 * Disables sending of messages and logs them to error_log()
-	 * @param boolean $bool
+	 * @param SS_Boolean $bool
 	 */
 	public static function log_all_messages( $bool = true ) {
 		self::$log_all_messages = $bool;

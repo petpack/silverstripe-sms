@@ -3,7 +3,7 @@ class SMSResponse extends Object {
 	
 	/**
 	 * Whether or not the send was successful.
-	 * @var boolean
+	 * @var SS_Boolean
 	 */
 	public $success = true;
 	

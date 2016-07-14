@@ -24,7 +24,7 @@ class transmitsmsAPIbase {
 	/**
 	 * Set version number for checking latest version against server version
 	 *
-	 * @var float
+	 * @var SS_Float
 	 */
 	private $version = 0.4;
 	
@@ -564,7 +564,7 @@ class transmitsmsAPI extends transmitsmsAPIbase {
 	 * @param integer $list_id
 	 * @param string $message
 	 * @param string $caller_id
-	 * @param boolean $optout
+	 * @param SS_Boolean $optout
 	 * @param integer $sendTime (schedule - always in unix timestamp set at GMT)
 	 * @return xml string
 	 */
@@ -648,7 +648,7 @@ class transmitsmsAPI extends transmitsmsAPIbase {
 	 * @param string (6 or more) $password
 	 * @param phone number $phone
 	 * @param string $reseller_pays (reseller will be billed for all client sends)
-	 * @param float $reseller_markup - charge per sms to add to clients cost (e.g. 2.1 = add 2.1 cents to SMS cost)
+	 * @param SS_Float $reseller_markup - charge per sms to add to clients cost (e.g. 2.1 = add 2.1 cents to SMS cost)
 	 * @return xml string
 	 */
 	public function addClient($name, $email, $password, $phone, $reseller_pays = 'no', $reseller_markup = 0)
